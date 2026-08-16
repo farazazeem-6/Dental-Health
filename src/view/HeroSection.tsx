@@ -143,9 +143,15 @@ export function HeroSection() {
         <div
           className={css({
             position: 'absolute',
+            top: { base: '16', md: '24' },
             bottom: { base: '5', md: '8' },
             left: { base: '3', md: '4' },
+            right: { base: '3', md: '4' },
             zIndex: 10,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+            minH: '0',
           })}
         >
           <span
@@ -155,22 +161,25 @@ export function HeroSection() {
               fontSize: { base: 'xs', md: 'sm' },
               fontWeight: 'semibold',
               mb: { base: '1', md: '2' },
+              flexShrink: 0,
             })}
           >
-            Trusted Dentist in West New York
+            Trusted Dentist in Lahore
           </span>
           <h1
             className={css({
+              display: 'flex',
+              flexDirection: 'column',
               color: 'brand.black',
-              fontSize: 'clamp(3rem, 11vw, 11rem)',
+              fontSize: 'clamp(1.75rem, min(8vw, 7.5vh), 8rem)',
               fontWeight: 'bold',
-              lineHeight: '0.79',
+              lineHeight: '0.9',
               letterSpacing: 'tight',
+              minH: '0',
             })}
           >
-            Dental
-            <br />
-            Care
+            <span>Dental</span>
+            <span>Care</span>
           </h1>
         </div>
 

@@ -20,6 +20,6 @@ export default function App() {
       <ImplantSection />
       <ContactSection />
       <FooterSection />
-m    </div>
+ </div>
   );
 }
