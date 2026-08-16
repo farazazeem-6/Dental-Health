@@ -183,17 +183,20 @@ export function GallerySection() {
             rounded: { base: 'xl', md: '2xl' },
             overflow: 'hidden',
             position: 'relative',
-            minH: { base: '200px', md: '0' },
+            display: 'flex',
+            minH: { base: '0', md: '0' },
           })}
           style={getAnimStyle(3)}
         >
           <div
             className={css({
-              position: 'absolute',
-              inset: 0,
+              position: 'relative',
+              w: 'full',
+              flex: '1',
               zIndex: 10,
               display: 'flex',
               flexWrap: { base: 'wrap', md: 'nowrap' },
+              alignContent: 'flex-start',
               gap: { base: '1.5', md: '2' },
               p: { base: '2', md: '3' },
             })}
@@ -204,11 +207,11 @@ export function GallerySection() {
                 className={css({
                   flex: '1',
                   minW: { base: 'calc(50% - 4px)', md: '0' },
+                  minH: { base: '140px', md: '0' },
                   rounded: { base: 'xl', md: '2xl' },
-                  p: { base: '3', md: '5' },
+                  p: { base: '3', md: '4' },
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'space-between',
                   bg: svc.active ? 'surface.glassStrong' : 'surface.glass',
                   backdropFilter: svc.active ? 'blur(12px)' : 'blur(24px)',
                 })}
@@ -216,7 +219,7 @@ export function GallerySection() {
                 <div>
                   <h3
                     className={css({
-                      fontSize: { base: 'xl', md: '4xl' },
+                      fontSize: { base: 'xl', md: '2xl' },
                       fontWeight: 'bold',
                       lineHeight: '1.05',
                       whiteSpace: 'pre-line',
@@ -240,8 +243,10 @@ export function GallerySection() {
                   <span
                     className={css({
                       alignSelf: 'flex-end',
-                      w: { base: '8', md: '12' },
-                      h: { base: '8', md: '12' },
+                      flexShrink: 0,
+                      mt: 'auto',
+                      w: { base: '8', md: '9' },
+                      h: { base: '8', md: '9' },
                       rounded: 'full',
                       border: '1px solid',
                       borderColor: svc.active ? 'brand.black' : 'brand.white',

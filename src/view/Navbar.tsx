@@ -80,7 +80,7 @@ export function Navbar() {
         </div>
 
         <div className={css({ display: { base: 'none', md: 'flex' }, alignItems: 'center', gap: '6' })}>
-          <Button tone="outline" size="sm">
+          <Button tone="outline" size="sm" onClick={() => setMenuOpen(true)}>
             Menu
           </Button>
           <span className={css({ fontSize: 'sm', fontWeight: 'semibold', color: 'brand.black' })}>
@@ -126,10 +126,10 @@ export function Navbar() {
 
       <div
         className={css({
-          display: { base: 'block', md: 'none' },
+          display: 'block',
           position: 'fixed',
           inset: 0,
-          zIndex: 40,
+          zIndex: 60,
           pointerEvents: menuOpen ? 'auto' : 'none',
         })}
       >
@@ -203,7 +203,14 @@ export function Navbar() {
               <p className={css({ fontSize: 'sm', fontWeight: 'semibold', color: 'brand.black', mb: '4' })}>
                 Dental Emergency
               </p>
-              <Button tone="black" size="full">
+              <Button
+                tone="black"
+                size="full"
+                onClick={() => {
+                  setMenuOpen(false);
+                  window.location.hash = NAV_LINK_HREFS.Contact ?? '#contact';
+                }}
+              >
                 Book Appointment
               </Button>
             </div>
