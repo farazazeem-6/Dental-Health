@@ -3,6 +3,7 @@ import type { RefObject } from 'react';
 import { css } from '../../styled-system/css';
 import { MaskedCard } from '../ui/MaskedCard';
 import { Button } from '../ui/Button';
+import { PhoneIcon } from '../ui/PhoneIcon';
 import { useIsMobile } from '../hooks/useIsMobile';
 import { useImageWidth } from '../hooks/useImageWidth';
 import { useMaskPositions } from '../hooks/useMaskPositions';
@@ -130,7 +131,12 @@ export function GallerySection() {
               zIndex: 10,
             })}
           >
-            <Button tone="white" size="lg">
+            <Button
+              tone="white"
+              size="lg"
+              className={css({ display: 'inline-flex', alignItems: 'center', gap: '2' })}
+            >
+              <PhoneIcon />
               Call Us
             </Button>
           </div>
