@@ -1,4 +1,4 @@
-import type { NavLink } from '../types/navigation';
+import type { NavLink } from '@/types/navigation';
 
 export const NAV_LINKS: NavLink[] = ['Home', 'Services', 'About', 'Gallery', 'Contact'];
 

@@ -5,7 +5,7 @@ import {
   SPLASH_STEPS,
   SPLASH_EXIT_DELAY_MS,
   SPLASH_COMPLETE_DELAY_MS,
-} from '../constants/animation';
+} from '@/constants/animation';
 
 export function SplashScreen({ onComplete }: { onComplete: () => void }) {
   const [count, setCount] = useState(0);

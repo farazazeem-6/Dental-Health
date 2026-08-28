@@ -1,9 +1,9 @@
 import type { RefObject } from 'react';
 import { css } from '../../styled-system/css';
-import { ArrowIcon } from '../ui/ArrowIcon';
-import { Button } from '../ui/Button';
-import { useStaggeredReveal } from '../hooks/useStaggeredReveal';
-import { SECTION3_IMG1, SECTION3_IMG2, SECTION3_BG } from '../constants/images';
+import { ArrowIcon } from '@/ui/ArrowIcon';
+import { Button } from '@/ui/Button';
+import { useStaggeredReveal } from '@/hooks/useStaggeredReveal';
+import { SECTION3_IMG1, SECTION3_IMG2, SECTION3_BG } from '@/constants/images';
 
 const sectionStyle = css({
   minH: '100vh',

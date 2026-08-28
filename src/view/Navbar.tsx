@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { css, cx } from "../../styled-system/css";
-import { Button } from "../ui/Button";
-import { NAV_LINKS, NAV_LINK_HREFS } from "../constants/navigation";
+import { Button } from "@/ui/Button";
+import { NAV_LINKS, NAV_LINK_HREFS } from "@/constants/navigation";
 
 const hamburgerSpan = css({
   position: "absolute",

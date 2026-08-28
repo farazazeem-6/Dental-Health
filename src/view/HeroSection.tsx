@@ -1,14 +1,14 @@
 import { useRef } from 'react';
 import type { RefObject } from 'react';
 import { css } from '../../styled-system/css';
-import { MaskedCard } from '../ui/MaskedCard';
-import { useIsMobile } from '../hooks/useIsMobile';
-import { useImageWidth } from '../hooks/useImageWidth';
-import { useMaskPositions } from '../hooks/useMaskPositions';
-import { useStaggeredReveal } from '../hooks/useStaggeredReveal';
-import { HERO_IMAGE } from '../constants/images';
-import { FEATURE_BARS } from '../constants/services';
-import { HERO_FOCAL_X } from '../constants/animation';
+import { MaskedCard } from '@/ui/MaskedCard';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { useImageWidth } from '@/hooks/useImageWidth';
+import { useMaskPositions } from '@/hooks/useMaskPositions';
+import { useStaggeredReveal } from '@/hooks/useStaggeredReveal';
+import { HERO_IMAGE } from '@/constants/images';
+import { FEATURE_BARS } from '@/constants/services';
+import { HERO_FOCAL_X } from '@/constants/animation';
 
 const sectionStyle = css({
   h: '100vh',

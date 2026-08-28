@@ -3,7 +3,7 @@ import type {
   FooterColumn,
   OpeningHour,
   SocialLink,
-} from '../types/contact';
+} from '@/types/contact';
 import { NAV_LINKS, NAV_LINK_HREFS } from './navigation';
 import { SERVICE_CATALOG } from './services';
 
