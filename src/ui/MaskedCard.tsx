@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactNode, Ref } from 'react';
-import type { MaskPosition } from '../hooks/useMaskPositions';
+import type { MaskPosition } from '@/hooks/useMaskPositions';
 
 interface MaskedCardProps {
   bgImage: string;

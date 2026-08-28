@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { MOBILE_BREAKPOINT_QUERY } from '../constants/animation';
+import { MOBILE_BREAKPOINT_QUERY } from '@/constants/animation';
 
 export function useIsMobile(): boolean {
   const [isMobile, setIsMobile] = useState(() => {

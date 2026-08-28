@@ -1,6 +1,6 @@
 import { css } from '../../styled-system/css';
-import { Button } from '../ui/Button';
-import { CONTACT_DETAILS, OPENING_HOURS } from '../constants/contact';
+import { Button } from '@/ui/Button';
+import { CONTACT_DETAILS, OPENING_HOURS } from '@/constants/contact';
 
 const inputStyle = css({
   w: 'full',

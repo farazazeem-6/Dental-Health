@@ -1,16 +1,16 @@
 import { useRef } from 'react';
 import type { RefObject } from 'react';
 import { css } from '../../styled-system/css';
-import { MaskedCard } from '../ui/MaskedCard';
-import { Button } from '../ui/Button';
-import { PhoneIcon } from '../ui/PhoneIcon';
-import { useIsMobile } from '../hooks/useIsMobile';
-import { useImageWidth } from '../hooks/useImageWidth';
-import { useMaskPositions } from '../hooks/useMaskPositions';
-import { useStaggeredReveal } from '../hooks/useStaggeredReveal';
-import { SECTION2_IMAGE } from '../constants/images';
-import { SERVICES } from '../constants/services';
-import { GALLERY_FOCAL_X } from '../constants/animation';
+import { MaskedCard } from '@/ui/MaskedCard';
+import { Button } from '@/ui/Button';
+import { PhoneIcon } from '@/ui/PhoneIcon';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { useImageWidth } from '@/hooks/useImageWidth';
+import { useMaskPositions } from '@/hooks/useMaskPositions';
+import { useStaggeredReveal } from '@/hooks/useStaggeredReveal';
+import { SECTION2_IMAGE } from '@/constants/images';
+import { SERVICES } from '@/constants/services';
+import { GALLERY_FOCAL_X } from '@/constants/animation';
 
 const sectionStyle = css({
   minH: '100vh',

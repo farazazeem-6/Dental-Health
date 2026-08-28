@@ -1,5 +1,5 @@
 import { css } from "../../styled-system/css";
-import { FOOTER_COLUMNS, SOCIAL_LINKS } from "../constants/contact";
+import { FOOTER_COLUMNS, SOCIAL_LINKS } from "@/constants/contact";
 
 export function FooterSection() {
   const year = new Date().getFullYear();

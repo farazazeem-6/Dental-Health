@@ -1,4 +1,4 @@
-import type { FeatureBar, Service, ServiceCatalogItem } from '../types/service';
+import type { FeatureBar, Service, ServiceCatalogItem } from '@/types/service';
 
 export const FEATURE_BARS: FeatureBar[] = [
   { id: 'advanced-dentistry', label: 'Advanced Dentistry' },

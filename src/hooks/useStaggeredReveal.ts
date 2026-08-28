@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
-import { REVEAL_THRESHOLD, REVEAL_STAGGER_MS } from '../constants/animation';
+import { REVEAL_THRESHOLD, REVEAL_STAGGER_MS } from '@/constants/animation';
 
 export function useStaggeredReveal(_count: number, threshold = REVEAL_THRESHOLD) {
   const containerRef = useRef<HTMLElement | null>(null);
