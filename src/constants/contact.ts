@@ -42,3 +42,16 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     })),
   },
 ];
+
+export const CONTACT_SECTION = {
+  sectionLabel: 'Get In Touch',
+  heading: 'Book Your Visit',
+  clinicInfoTitle: 'Clinic Information',
+  openingHoursTitle: 'Opening Hours',
+  formTitle: 'Send a Message',
+  formNamePlaceholder: 'Full Name',
+  formPhonePlaceholder: 'Phone Number',
+  formEmailPlaceholder: 'Email Address',
+  formMessagePlaceholder: 'Tell us what you need',
+  submitButton: 'Send Message',
+} as const;

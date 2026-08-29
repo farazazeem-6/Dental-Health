@@ -9,6 +9,7 @@ import { useStaggeredReveal } from '@/hooks/useStaggeredReveal';
 import { HERO_IMAGE } from '@/constants/images';
 import { FEATURE_BARS } from '@/constants/services';
 import { HERO_FOCAL_X } from '@/constants/animation';
+import { HERO_SECTION } from '@/constants/hero';
 
 const sectionStyle = css({
   h: '100vh',
@@ -121,9 +122,7 @@ export function HeroSection() {
             zIndex: 10,
           })}
         >
-          We wish to provide professional dental services
-          <br />
-          that match the current technologies
+          {HERO_SECTION.introText}
         </p>
 
         <div
@@ -164,7 +163,7 @@ export function HeroSection() {
               flexShrink: 0,
             })}
           >
-            Trusted Dentist in Lahore
+            {HERO_SECTION.badge}
           </span>
           <h1
             className={css({
@@ -178,8 +177,8 @@ export function HeroSection() {
               minH: '0',
             })}
           >
-            <span>Dental</span>
-            <span>Care</span>
+            <span>{HERO_SECTION.heading1}</span>
+            <span>{HERO_SECTION.heading2}</span>
           </h1>
         </div>
 
@@ -194,7 +193,7 @@ export function HeroSection() {
             zIndex: 10,
           })}
         >
-          Free Consultation
+          {HERO_SECTION.cta}
         </span>
       </MaskedCard>
     </section>

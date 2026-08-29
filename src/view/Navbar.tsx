@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { css, cx } from "../../styled-system/css";
 import { Button } from "@/ui/Button";
-import { NAV_LINKS, NAV_LINK_HREFS } from "@/constants/navigation";
+import { NAV_LINKS, NAV_LINK_HREFS, NAVBAR } from "@/constants/navigation";
 
 const hamburgerSpan = css({
   position: "absolute",
@@ -51,7 +51,7 @@ export function Navbar() {
               color: "brand.black",
             })}
           >
-            Dental
+            {NAVBAR.brandName1}
           </span>
           <span
             className={css({
@@ -64,7 +64,7 @@ export function Navbar() {
               mt: { base: "1", md: "1.5" },
             })}
           >
-            Health
+            {NAVBAR.brandName2}
           </span>
           <span
             className={css({
@@ -75,7 +75,7 @@ export function Navbar() {
               mt: { base: "1.5", md: "2" },
             })}
           >
-            quality healthcare
+            {NAVBAR.tagline}
           </span>
         </div>
 
@@ -87,7 +87,7 @@ export function Navbar() {
           })}
         >
           <Button tone="outline" size="sm" onClick={() => setMenuOpen(true)}>
-            Menu
+            {NAVBAR.menuButton}
           </Button>
         </div>
 
@@ -101,7 +101,7 @@ export function Navbar() {
             position: "relative",
           })}
           onClick={() => setMenuOpen((v) => !v)}
-          aria-label="Toggle menu"
+          aria-label={NAVBAR.menuAriaLabel}
         >
           <span
             className={cx(
@@ -221,7 +221,7 @@ export function Navbar() {
                   mb: "4",
                 })}
               >
-                Dental Emergency
+                {NAVBAR.emergencyLabel}
               </p>
               <Button
                 tone="black"
@@ -231,7 +231,7 @@ export function Navbar() {
                   window.location.hash = NAV_LINK_HREFS.Contact ?? "#contact";
                 }}
               >
-                Book Appointment
+                {NAVBAR.appointmentButton}
               </Button>
             </div>
           </div>

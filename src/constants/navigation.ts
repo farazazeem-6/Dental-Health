@@ -9,3 +9,13 @@ export const NAV_LINK_HREFS: Record<string, string> = {
   Gallery: '#gallery',
   Contact: '#contact',
 };
+
+export const NAVBAR = {
+  brandName1: 'Dental',
+  brandName2: 'Health',
+  tagline: 'quality healthcare',
+  menuButton: 'Menu',
+  menuAriaLabel: 'Toggle menu',
+  emergencyLabel: 'Dental Emergency',
+  appointmentButton: 'Book Appointment',
+} as const;

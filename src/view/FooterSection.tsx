@@ -1,5 +1,6 @@
 import { css } from "../../styled-system/css";
 import { FOOTER_COLUMNS, SOCIAL_LINKS } from "@/constants/contact";
+import { FOOTER_SECTION } from "@/constants/footer";
 
 export function FooterSection() {
   const year = new Date().getFullYear();
@@ -42,7 +43,7 @@ export function FooterSection() {
                 lineHeight: "1",
               })}
             >
-              Dental
+              {FOOTER_SECTION.brandName1}
             </span>
             <span
               className={css({
@@ -53,7 +54,7 @@ export function FooterSection() {
                 mt: "-1",
               })}
             >
-              Health
+              {FOOTER_SECTION.brandName2}
             </span>
           </div>
           <p
@@ -64,7 +65,7 @@ export function FooterSection() {
               maxW: "220px",
             })}
           >
-            Trusted, modern dental care in the heart of West New York.
+            {FOOTER_SECTION.tagline}
           </p>
           <div className={css({ display: "flex", gap: "3" })}>
             {SOCIAL_LINKS.map((social) => (
@@ -144,28 +145,28 @@ export function FooterSection() {
         })}
       >
         <span className={css({ fontSize: "xs", color: "neutral.500" })}>
-          © {year} Dental Health. All rights reserved.
+          {FOOTER_SECTION.copyrightPrefix} {year} {FOOTER_SECTION.copyrightSuffix}
         </span>
         <div className={css({ display: "flex", gap: "5" })}>
           <a
-            href="#privacy"
+            href={FOOTER_SECTION.privacyHref}
             className={css({
               fontSize: "xs",
               color: "neutral.500",
               _hover: { color: "brand.white" },
             })}
           >
-            Privacy Policy
+            {FOOTER_SECTION.privacyLink}
           </a>
           <a
-            href="#terms"
+            href={FOOTER_SECTION.termsHref}
             className={css({
               fontSize: "xs",
               color: "neutral.500",
               _hover: { color: "brand.white" },
             })}
           >
-            Terms of Service
+            {FOOTER_SECTION.termsLink}
           </a>
         </div>
       </div>

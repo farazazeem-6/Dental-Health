@@ -1,6 +1,6 @@
 import { css } from '../../styled-system/css';
 import { Button } from '@/ui/Button';
-import { CONTACT_DETAILS, OPENING_HOURS } from '@/constants/contact';
+import { CONTACT_DETAILS, OPENING_HOURS, CONTACT_SECTION } from '@/constants/contact';
 
 const inputStyle = css({
   w: 'full',
@@ -43,7 +43,7 @@ export function ContactSection() {
             mb: '2',
           })}
         >
-          Get In Touch
+          {CONTACT_SECTION.sectionLabel}
         </span>
         <h2
           className={css({
@@ -53,7 +53,7 @@ export function ContactSection() {
             color: 'brand.black',
           })}
         >
-          Book Your Visit
+          {CONTACT_SECTION.heading}
         </h2>
       </div>
 
@@ -78,7 +78,7 @@ export function ContactSection() {
         >
           <div>
             <h3 className={css({ fontSize: 'lg', fontWeight: 'bold', color: 'brand.black', mb: '4' })}>
-              Clinic Information
+              {CONTACT_SECTION.clinicInfoTitle}
             </h3>
             <div className={css({ display: 'flex', flexDirection: 'column', gap: '3' })}>
               {CONTACT_DETAILS.map((detail) => (
@@ -113,7 +113,7 @@ export function ContactSection() {
 
           <div>
             <h3 className={css({ fontSize: 'lg', fontWeight: 'bold', color: 'brand.black', mb: '4' })}>
-              Opening Hours
+              {CONTACT_SECTION.openingHoursTitle}
             </h3>
             <div className={css({ display: 'flex', flexDirection: 'column', gap: '3' })}>
               {OPENING_HOURS.map((entry) => (
@@ -146,16 +146,16 @@ export function ContactSection() {
           })}
         >
           <h3 className={css({ fontSize: 'lg', fontWeight: 'bold', color: 'brand.black' })}>
-            Send a Message
+            {CONTACT_SECTION.formTitle}
           </h3>
           <div className={css({ display: 'grid', gridTemplateColumns: { base: '1fr', sm: '1fr 1fr' }, gap: '4' })}>
-            <input type="text" placeholder="Full Name" className={inputStyle} required />
-            <input type="tel" placeholder="Phone Number" className={inputStyle} required />
+            <input type="text" placeholder={CONTACT_SECTION.formNamePlaceholder} className={inputStyle} required />
+            <input type="tel" placeholder={CONTACT_SECTION.formPhonePlaceholder} className={inputStyle} required />
           </div>
-          <input type="email" placeholder="Email Address" className={inputStyle} required />
-          <textarea placeholder="Tell us what you need" rows={4} className={inputStyle} />
+          <input type="email" placeholder={CONTACT_SECTION.formEmailPlaceholder} className={inputStyle} required />
+          <textarea placeholder={CONTACT_SECTION.formMessagePlaceholder} rows={4} className={inputStyle} />
           <Button tone="black" size="lg" type="submit" className={css({ alignSelf: 'flex-start' })}>
-            Send Message
+            {CONTACT_SECTION.submitButton}
           </Button>
         </form>
       </div>
