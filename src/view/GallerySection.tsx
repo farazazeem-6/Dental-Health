@@ -11,6 +11,7 @@ import { useStaggeredReveal } from '@/hooks/useStaggeredReveal';
 import { SECTION2_IMAGE } from '@/constants/images';
 import { SERVICES } from '@/constants/services';
 import { GALLERY_FOCAL_X } from '@/constants/animation';
+import { GALLERY_SECTION } from '@/constants/gallery';
 
 const sectionStyle = css({
   minH: '100vh',
@@ -73,7 +74,7 @@ export function GallerySection() {
               zIndex: 10,
             })}
           >
-            Smile Gallery
+            {GALLERY_SECTION.card1Title}
           </h3>
           <span
             className={css({
@@ -86,7 +87,7 @@ export function GallerySection() {
               zIndex: 10,
             })}
           >
-            Our cosmetic dental work
+            {GALLERY_SECTION.card1Subtitle}
           </span>
         </MaskedCard>
 
@@ -119,9 +120,7 @@ export function GallerySection() {
               zIndex: 10,
             })}
           >
-            If you want a gorgeous smile,
-            <br />
-            call us to ask about a smile makeover.
+            {GALLERY_SECTION.card2Description}
           </p>
           <div
             className={css({
@@ -137,7 +136,7 @@ export function GallerySection() {
               className={css({ display: 'inline-flex', alignItems: 'center', gap: '2' })}
             >
               <PhoneIcon />
-              Call Us
+              {GALLERY_SECTION.callButton}
             </Button>
           </div>
         </MaskedCard>

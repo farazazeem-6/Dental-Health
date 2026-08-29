@@ -4,6 +4,7 @@ import { ArrowIcon } from '@/ui/ArrowIcon';
 import { Button } from '@/ui/Button';
 import { useStaggeredReveal } from '@/hooks/useStaggeredReveal';
 import { SECTION3_IMG1, SECTION3_IMG2, SECTION3_BG } from '@/constants/images';
+import { IMPLANT_SECTION } from '@/constants/implant';
 
 const sectionStyle = css({
   minH: '100vh',
@@ -54,9 +55,9 @@ export function ImplantSection() {
                 color: 'brand.black',
               })}
             >
-              Implant
+              {IMPLANT_SECTION.heading1}
               <br />
-              Dentistry
+              {IMPLANT_SECTION.heading2}
             </h2>
             <div>
               <p
@@ -67,7 +68,7 @@ export function ImplantSection() {
                   mb: { base: '1.5', md: '2' },
                 })}
               >
-                Restore Missing Teeth
+                {IMPLANT_SECTION.featureTitle}
               </p>
               <p
                 className={css({
@@ -78,7 +79,7 @@ export function ImplantSection() {
                   maxW: { base: 'full', md: '340px' },
                 })}
               >
-                A permanent, natural-looking solution that replaces missing teeth root to crown, restoring your bite and confidence.
+                {IMPLANT_SECTION.featureDescription}
               </p>
             </div>
           </div>
@@ -95,14 +96,14 @@ export function ImplantSection() {
             <div className={css({ flex: '1', rounded: { base: 'xl', md: '2xl' }, overflow: 'hidden' })}>
               <img
                 src={SECTION3_IMG1}
-                alt="Dental implant procedure"
+                alt={IMPLANT_SECTION.imageAlt1}
                 className={css({ w: 'full', h: 'full', objectFit: 'cover' })}
               />
             </div>
             <div className={css({ flex: '1', rounded: { base: 'xl', md: '2xl' }, overflow: 'hidden' })}>
               <img
                 src={SECTION3_IMG2}
-                alt="Dental restoration"
+                alt={IMPLANT_SECTION.imageAlt2}
                 className={css({ w: 'full', h: 'full', objectFit: 'cover' })}
               />
             </div>
@@ -130,7 +131,7 @@ export function ImplantSection() {
                   mb: { base: '2', md: '3' },
                 })}
               >
-                Consultation
+                {IMPLANT_SECTION.consultationLabel}
               </p>
               <h3
                 className={css({
@@ -140,15 +141,15 @@ export function ImplantSection() {
                   lineHeight: { base: '1.5rem', md: '2rem' },
                 })}
               >
-                Dental
+                {IMPLANT_SECTION.serviceHeading1}
                 <br />
-                Restoration
+                {IMPLANT_SECTION.serviceHeading2}
                 <br />
-                Services
+                {IMPLANT_SECTION.serviceHeading3}
               </h3>
             </div>
             <Button tone="white" size="lg">
-              Book Online
+              {IMPLANT_SECTION.bookButton}
             </Button>
           </div>
         </div>
@@ -164,7 +165,7 @@ export function ImplantSection() {
         >
           <img
             src={SECTION3_BG}
-            alt="Smiling patient"
+            alt={IMPLANT_SECTION.imageAlt3}
             className={css({ w: 'full', h: 'full', objectFit: 'cover', objectPosition: 'top' })}
           />
 
@@ -191,11 +192,7 @@ export function ImplantSection() {
               })}
             >
               <h4 className={css({ fontSize: { base: 'lg', md: '2xl' }, fontWeight: 'bold', lineHeight: { base: '1.25rem', md: '1.75rem' }, color: 'brand.black' })}>
-                The Process
-                <br />
-                of Installing
-                <br />
-                Implants
+                {IMPLANT_SECTION.card1Title}
               </h4>
               <span
                 className={css({
@@ -228,11 +225,7 @@ export function ImplantSection() {
               })}
             >
               <h4 className={css({ color: 'brand.white', fontSize: { base: 'lg', md: '2xl' }, fontWeight: 'bold', lineHeight: { base: '1.25rem', md: '1.75rem' } })}>
-                Caring
-                <br />
-                for Dental
-                <br />
-                Implants
+                {IMPLANT_SECTION.card2Title}
               </h4>
               <span
                 className={css({
