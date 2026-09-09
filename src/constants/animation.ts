@@ -10,3 +10,5 @@ export const MOBILE_BREAKPOINT_QUERY = '(max-width: 767px)';
 
 export const HERO_FOCAL_X = { mobile: 0.7, desktop: 0.8 };
 export const GALLERY_FOCAL_X = { mobile: 0.65, desktop: 0.8 };
+
+export const TOAST_DURATION_MS = 3500;

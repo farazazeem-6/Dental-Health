@@ -81,6 +81,10 @@ export default defineConfig({
             500: { value: '#737373' },
             800: { value: '#262626' },
           },
+          feedback: {
+            success: { value: '#16a34a' },
+            error: { value: '#dc2626' },
+          },
         },
         fonts: {
           sans: { value: "'Open Sauce One', -apple-system, BlinkMacSystemFont, sans-serif" },
