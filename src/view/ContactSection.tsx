@@ -1,5 +1,8 @@
+import type { FormEvent } from 'react';
 import { css } from '../../styled-system/css';
 import { Button } from '@/ui/Button';
+import { Toast } from '@/ui/Toast';
+import { useToast } from '@/hooks/useToast';
 import { CONTACT_DETAILS, OPENING_HOURS, CONTACT_SECTION } from '@/constants/contact';
 
 const inputStyle = css({
@@ -17,6 +20,14 @@ const inputStyle = css({
 });
 
 export function ContactSection() {
+  const { toast, showToast, dismissToast } = useToast();
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    showToast(CONTACT_SECTION.submitSuccessToast, 'success');
+    e.currentTarget.reset();
+  };
+
   return (
     <section
       id="contact"
@@ -135,7 +146,7 @@ export function ContactSection() {
         </div>
 
         <form
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSubmit}
           className={css({
             rounded: { base: 'xl', md: '2xl' },
             bg: 'surface.subtle',
@@ -159,6 +170,8 @@ export function ContactSection() {
           </Button>
         </form>
       </div>
+
+      {toast && <Toast toast={toast} onDismiss={dismissToast} />}
     </section>
   );
 }
