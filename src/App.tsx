@@ -5,6 +5,7 @@ import { Navbar } from './view/Navbar';
 import { HeroSection } from './view/HeroSection';
 import { GallerySection } from './view/GallerySection';
 import { ImplantSection } from './view/ImplantSection';
+import { TestimonialsSection } from './view/TestimonialsSection';
 import { ContactSection } from './view/ContactSection';
 import { FooterSection } from './view/FooterSection';
 
@@ -18,6 +19,7 @@ export default function App() {
       <HeroSection />
       <GallerySection />
       <ImplantSection />
+      <TestimonialsSection />
       <ContactSection />
       <FooterSection />
  </div>
