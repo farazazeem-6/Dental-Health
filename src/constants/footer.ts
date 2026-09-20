@@ -8,4 +8,4 @@ export const FOOTER_SECTION = {
   privacyHref: '#privacy',
   termsLink: 'Terms of Service',
   termsHref: '#terms',
-} as const;
+}

@@ -14,4 +14,4 @@ export const IMPLANT_SECTION = {
   imageAlt3: 'Smiling patient',
   card1Title: 'The Process\nof Installing\nImplants',
   card2Title: 'Caring\nfor Dental\nImplants',
-} as const;
+}

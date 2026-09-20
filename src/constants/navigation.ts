@@ -18,4 +18,4 @@ export const NAVBAR = {
   menuAriaLabel: 'Toggle menu',
   emergencyLabel: 'Dental Emergency',
   appointmentButton: 'Book Appointment',
-} as const;
+}

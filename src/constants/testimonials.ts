@@ -3,7 +3,7 @@ import type { Testimonial } from '@/types/testimonial';
 export const TESTIMONIALS_SECTION = {
   sectionLabel: 'Patient Stories',
   heading: 'What Our Patients Say',
-} as const;
+}
 
 export const TESTIMONIALS: Testimonial[] = [
   {
