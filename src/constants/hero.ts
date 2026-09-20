@@ -5,4 +5,4 @@ export const HERO_SECTION = {
   heading1: 'Dental',
   heading2: 'Care',
   cta: 'Free Consultation',
-} as const;
+}

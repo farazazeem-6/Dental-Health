@@ -55,4 +55,4 @@ export const CONTACT_SECTION = {
   formMessagePlaceholder: 'Tell us what you need',
   submitButton: 'Send Message',
   submitSuccessToast: "Message sent! We'll get back to you shortly.",
-} as const;
+}

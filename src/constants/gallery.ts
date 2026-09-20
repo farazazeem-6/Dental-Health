@@ -6,4 +6,4 @@ export const GALLERY_SECTION = {
   callButton: 'Call Us',
   heading1: 'Smile',
   heading2: 'makeover',
-} as const;
+}
