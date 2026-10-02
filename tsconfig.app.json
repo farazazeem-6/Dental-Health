@@ -12,6 +12,7 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "paths": {
+      "@/styled-system/*": ["./styled-system/*"],
       "@/*": ["./src/*"]
     },
     "verbatimModuleSyntax": true,

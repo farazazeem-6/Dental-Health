@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes } from 'react';
-import { button, type ButtonVariantProps } from '../../styled-system/recipes';
-import { cx } from '../../styled-system/css';
+import { button, type ButtonVariantProps } from '@/styled-system/recipes';
+import { cx } from '@/styled-system/css';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
   ButtonVariantProps & {

@@ -1,4 +1,4 @@
-import { css, cx } from '../../styled-system/css';
+import { css, cx } from '@/styled-system/css';
 
 const starStyle = css({ color: 'brand.black' });
 

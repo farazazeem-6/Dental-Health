@@ -1,4 +1,4 @@
-import { cx } from '../../styled-system/css';
+import { cx } from '@/styled-system/css';
 
 export function CheckCircleIcon({ className }: { className?: string }) {
   return (

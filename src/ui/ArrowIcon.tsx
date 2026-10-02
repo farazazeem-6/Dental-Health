@@ -1,4 +1,4 @@
-import { css, cx } from '../../styled-system/css';
+import { css, cx } from '@/styled-system/css';
 
 const arrowStyle = css({ transform: 'rotate(-45deg)' });
 
