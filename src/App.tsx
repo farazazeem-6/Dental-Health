@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { css } from '../styled-system/css';
+import { css } from '@/styled-system/css';
 import { SplashScreen } from './view/SplashScreen';
 import { Navbar } from './view/Navbar';
 import { HeroSection } from './view/HeroSection';

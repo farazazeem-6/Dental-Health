@@ -1,4 +1,4 @@
-import { css } from '../../styled-system/css';
+import { css } from '@/styled-system/css';
 import { CheckCircleIcon } from '@/ui/CheckCircleIcon';
 import type { ToastState } from '@/types/toast';
 

@@ -1,4 +1,4 @@
-import { css } from "../../styled-system/css";
+import { css } from '@/styled-system/css';
 import { FOOTER_COLUMNS, SOCIAL_LINKS } from "@/constants/contact";
 import { FOOTER_SECTION } from "@/constants/footer";
 

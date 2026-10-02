@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      '@/styled-system': path.resolve(import.meta.dirname, './styled-system'),
       '@': path.resolve(import.meta.dirname, './src'),
     },
   },

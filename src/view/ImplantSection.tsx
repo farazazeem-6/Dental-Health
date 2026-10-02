@@ -1,5 +1,5 @@
 import type { RefObject } from 'react';
-import { css } from '../../styled-system/css';
+import { css } from '@/styled-system/css';
 import { ArrowIcon } from '@/ui/ArrowIcon';
 import { Button } from '@/ui/Button';
 import { useStaggeredReveal } from '@/hooks/useStaggeredReveal';

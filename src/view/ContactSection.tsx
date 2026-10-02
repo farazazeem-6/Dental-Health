@@ -1,5 +1,5 @@
 import type { FormEvent } from 'react';
-import { css } from '../../styled-system/css';
+import { css } from '@/styled-system/css';
 import { Button } from '@/ui/Button';
 import { Toast } from '@/ui/Toast';
 import { useToast } from '@/hooks/useToast';

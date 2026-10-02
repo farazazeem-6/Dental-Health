@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import type { RefObject } from 'react';
-import { css } from '../../styled-system/css';
+import { css } from '@/styled-system/css';
 import { MaskedCard } from '@/ui/MaskedCard';
 import { Button } from '@/ui/Button';
 import { PhoneIcon } from '@/ui/PhoneIcon';

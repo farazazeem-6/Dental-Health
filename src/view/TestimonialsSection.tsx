@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { StarIcon } from "@/ui/StarIcon";
 import { useStaggeredReveal } from "@/hooks/useStaggeredReveal";
 import { TESTIMONIALS, TESTIMONIALS_SECTION } from "@/constants/testimonials";
-import { css } from "../../styled-system/css";
+import { css } from '@/styled-system/css';
 
 export function TestimonialsSection() {
   const { containerRef, getAnimStyle } = useStaggeredReveal(
